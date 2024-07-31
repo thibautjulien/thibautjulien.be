@@ -1,0 +1,101 @@
+/* 
+Developer: Thibaut Julien
+Date: 31.07.2024
+Version: 1.0
+*/
+
+.shantell-sans {
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.shantell-sans {
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    max-height: 100vh;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-image: url('images/background.png'); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: Nunito;
+}
+
+/* HEADER */
+header img {
+    width: 100%;
+    display: flex;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo {
+    max-width: 90px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;  
+    gap: 3rem;
+}
+
+.nav-links .link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 70%;
+}
+
+nav .btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
