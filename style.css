@@ -167,7 +167,7 @@ nav .btn:hover {
 .container-aboutme h1 {
     font-size: 3rem;
     text-transform: uppercase;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 }
 
 .container-aboutme p {
@@ -185,7 +185,7 @@ nav .btn:hover {
 .container-projects h1 {
     font-size: 3rem;
     text-transform: uppercase;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 }
 
 .card-container {
@@ -258,4 +258,63 @@ nav .btn:hover {
 
 .card:hover {
     transform: rotateY(180deg);
+}
+
+/* ARTICLE CONTACT ME */
+.container-contact {
+    margin-top: 25rem;
+    text-align: center;
+}
+
+.container-contact h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+
+.form-container {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input-group input {
+    width: 48%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+}
+
+button.submit-btn {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button.submit-btn img {
+    width: 40px;
+    height: 40px;
 }
