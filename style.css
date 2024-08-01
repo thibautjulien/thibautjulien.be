@@ -33,6 +33,11 @@ body {
     background-position: center; 
     background-repeat: no-repeat; 
     font-family: Nunito;
+    color: white;
+}
+
+.wrapper {
+    margin: 0 28rem;
 }
 
 /* HEADER */
@@ -80,12 +85,16 @@ header nav {
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #8f8f8f;
     transition: all 0.3s ease;
 }
 
 .link a:hover::after {
     width: 70%;
+}
+
+.link a:hover {
+    color: #8f8f8f;
 }
 
 nav .btn {
@@ -95,7 +104,74 @@ nav .btn {
     text-transform: uppercase;
     color: black;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+nav .btn:hover {
+    background-color: #8f8f8f;
+}
+
+
+/* ARTICLE Below header NAV */
+.container-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    margin: 0 28rem;
+    margin-top: 10rem;
+}
+
+.container-header-textes {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    text-align: center;
+    line-height: 4.5rem;
+}
+
+.container-header-textes h1 {
+    font-family: "Shantell Sans", cursive;
+    font-weight: 400;
+    font-size: 4.1rem;
+}
+
+.container-header-textes p {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.nav-header-socials img {
+    width: 40px;
+    margin: 0 1.5rem;
+}
+
+.container-header-image {
+    display: flex;
+    max-width: 800px;
+}
+
+.container-header-image img {
+    width: 300px;
+}
+
+/* ARTICLE ABOUT ME */
+.container-aboutme {
+    margin-top: 25rem;
+    text-align: center;
+}
+
+.container-aboutme h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.container-aboutme p {
+    text-align: justify;
+    font-family: "Shantell Sans", cursive;
+    font-weight: 400;
 }
