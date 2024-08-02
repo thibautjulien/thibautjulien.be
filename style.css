@@ -37,8 +37,33 @@ body {
 }
 
 .wrapper {
-    margin: 0 28rem;
+    padding: 0 20rem;
 }
+
+/* ANNOUNCE */
+/* .marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: lightcoral;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.marquee {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+} */
 
 /* HEADER */
 header img {
@@ -263,6 +288,7 @@ nav .btn:hover {
 /* ARTICLE CONTACT ME */
 .container-contact {
     margin-top: 25rem;
+    padding: 0 10rem;
     text-align: center;
 }
 
@@ -287,6 +313,7 @@ form {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .input-group input {
@@ -305,6 +332,7 @@ input, textarea {
 
 textarea {
     resize: none;
+    margin-top: 1rem;
 }
 
 button.submit-btn {
@@ -312,6 +340,7 @@ button.submit-btn {
     background: none;
     border: none;
     cursor: pointer;
+    margin-top: 1rem;
 }
 
 button.submit-btn img {
@@ -330,3 +359,15 @@ button.submit-btn img {
     text-align: center;
     padding: 1.5rem 0;
 }
+
+/* ANIMATION JS */
+.reveal-loaded .reveal {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  
+  .reveal-loaded .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(0.5, 0, 0, 1);
+  }
