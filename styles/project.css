@@ -23,6 +23,7 @@ Version: 1.0
     outline: none;
     border: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -111,4 +112,107 @@ nav .btn {
 
 nav .btn:hover {
     background-color: #8f8f8f;
+}
+
+nav .btn a {
+    color: black;
+}
+
+/* ARTICLE CAROUSEL */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 6rem;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 500px; 
+    height: 600px; 
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infos-container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 35px;
+}
+
+.infos-container p {
+    width: 550px;
+    height: auto;
+    text-align: justify;
+    font-family: "Shantell Sans";
+}
+
+/* .infos-container img {
+    width: 100px; 
+    height: auto;
+} */
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+/* ANIMATION CSS */
+
+/* .typewriter-container {
+    border-right: 2px solid black;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+} */
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+#typewriter-text::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background: black;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+.reveal-loaded .reveal {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  
+  .reveal-loaded .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(0.5, 0, 0, 1);
+  }
+
+/* FOOTER */
+.container-footer {
+    margin-top: 15rem;
+}
+
+.container-footer p {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 1.5rem 0;
 }

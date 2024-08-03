@@ -21,3 +21,21 @@ window.addEventListener('DOMContentLoaded', function () {
         observer.observe(r)
     })
 })
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const text = "Oufti Valet";
+    const typewriterText = document.getElementById("typewriter-text-oufti");
+    let index = 0;
+
+    function typeWriter() {
+        if (index < text.length) {
+            typewriterText.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 100);
+        }
+    }
+
+    typeWriter();
+});
