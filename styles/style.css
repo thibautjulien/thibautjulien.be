@@ -10,7 +10,7 @@ Version: 1.0
     font-style: normal;
 }
 
-.shantell-sans {
+.Nunito {
     font-family: "Shantell Sans", cursive;
     font-optical-sizing: auto;
     font-style: normal;
@@ -27,7 +27,7 @@ Version: 1.0
 
 body {
     height: 100%;
-    background-image: url('images/background.png'); 
+    background-image: url('../images/background.png'); 
     background-attachment: fixed; 
     background-size: cover; 
     background-position: center; 
@@ -216,7 +216,7 @@ nav .btn:hover {
 .card-container {
     perspective: 1000px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .card {
@@ -333,6 +333,7 @@ input, textarea {
 textarea {
     resize: none;
     margin-top: 1rem;
+    padding-bottom: 10rem;
 }
 
 button.submit-btn {
