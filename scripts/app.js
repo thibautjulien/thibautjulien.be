@@ -1,3 +1,5 @@
+/* Animation reveal */
+
 const ratio = .27
 const options = {
     root: null,
@@ -24,18 +26,24 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
+/* Animation typewriter */
+
 document.addEventListener("DOMContentLoaded", function() {
-    const text = "Oufti Valet";
-    const typewriterText = document.getElementById("typewriter-text-oufti");
-    let index = 0;
+    const typewriterContainers = document.querySelectorAll('.typewriter-container');
 
-    function typeWriter() {
-        if (index < text.length) {
-            typewriterText.innerHTML += text.charAt(index);
-            index++;
-            setTimeout(typeWriter, 100);
+    typewriterContainers.forEach(container => {
+        const text = container.getAttribute('data-text');
+        const typewriterText = container.querySelector('.typewriter-text');
+        let index = 0;
+
+        function typeWriter() {
+            if (index < text.length) {
+                typewriterText.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100);
+            }
         }
-    }
 
-    typeWriter();
+        typeWriter();
+    });
 });

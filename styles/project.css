@@ -122,21 +122,21 @@ nav .btn a {
 
 .container {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-around;
     margin-top: 6rem;
 }
 
 .carousel-container {
     overflow: hidden;
-    width: 500px; 
-    height: 600px; 
+    width: 700px; 
+    height: 500px; 
     position: relative;
 }
 
 .carousel {
     display: flex;
-    animation: slide 15s infinite;
+    animation: slide 30s infinite;
 }
 
 .carousel img {
@@ -145,7 +145,11 @@ nav .btn a {
     object-fit: cover;
 }
 
-.infos-container h2 {
+.infos-container {
+    text-align: center;
+}
+
+.typewriter-container h1 {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 2rem;
@@ -157,6 +161,19 @@ nav .btn a {
     height: auto;
     text-align: justify;
     font-family: "Shantell Sans";
+    margin-bottom: 3rem;
+}
+
+.infos-container a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.infos-container a:hover {
+    background-color: #8f8f8f;
 }
 
 /* .infos-container img {
@@ -166,9 +183,12 @@ nav .btn a {
 
 @keyframes slide {
     0% { transform: translateX(0); }
-    33% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
+    16.67% { transform: translateX(0); }
+    33.34% { transform: translateX(-700px); }
+    50.01% { transform: translateX(-1400px); }
+    66.68% { transform: translateX(-2100px); }
+    83.35% { transform: translateX(-2800px); }
+    100% { transform: translateX(-3500px); }
 }
 
 /* ANIMATION CSS */

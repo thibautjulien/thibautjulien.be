@@ -1,0 +1,315 @@
+/*
+DEVELOPER: Julien Thibaut
+DATE: 17-05-2021
+*/
+
+/*
+-------------------------
+TERMS GENERALS 
+-------------------------
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #2b2a29;
+}
+
+.wrapper {
+  max-width: 1100px;
+  min-width: 450px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* .overlay {
+  background: rgba(57, 57, 56, 0.75);
+  height: 100%;
+} */
+
+.clear {
+  clear: both;
+}
+
+/*
+-------------------------
+HEADER
+-------------------------
+*/
+
+/* header {
+  background-color: #161616;
+  color: white;
+  border-bottom: 3px solid #ffd100;
+}
+
+header::after {
+  content: '';
+  border-bottom: 3px solid red;
+  padding-bottom: 2.5px;
+} */
+
+.contenair {
+  position: relative;
+  height: 130px;
+  background-color: black;
+  border-bottom: 2px solid yellow;
+}
+
+.contenair::after {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  bottom: -5px;
+  height: 5px;
+  width: 100%;
+  border-bottom: 3px solid red;
+}
+
+#wrapper-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#header-logo img {
+  width: 45%;
+  float: left;
+}
+
+#nav-menu {
+  display: flex;
+}
+
+#nav-menu li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 40px;
+  margin-top: 13px;
+}
+
+#nav-menu a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#nav-menu a:hover {
+  color: #ffd100;
+}
+
+/* 
+================================== 
+ MAIN-IMAGE 
+================================== 
+*/
+
+.main-image {
+  background: linear-gradient(
+      to top,
+      rgba(57, 57, 56, 0.75) 0%,
+      rgba(57, 57, 56, 0.75) 100%
+    ),
+    url('../images/main-image.jpg') center, center;
+  background-size: cover;
+  height: 600px;
+}
+
+.info-center {
+  text-align: center;
+}
+
+.main-image h2 {
+  padding-top: 180px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+}
+
+.main-image p {
+  color: white;
+  font-size: 20px;
+  text-align: justify;
+  text-align-last: center;
+  width: 500px;
+  margin: 40px auto;
+}
+
+.main-image a {
+  display: inline-block;
+  color: black;
+  background-color: white;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px 25px 10px 25px;
+}
+
+.main-image a:hover {
+  background-color: #ffd100;
+}
+
+/* 
+================================== 
+ INFORMATIONS
+================================== 
+*/
+
+#contenair-informations {
+  margin: 6% 0;
+}
+
+.contenair-info {
+  display: flex;
+  justify-content: space-around;
+  margin: 5% 0;
+}
+
+.contenair-info img {
+  width: 38%;
+  border-radius: 5px;
+}
+
+.info-1,
+.info-2 {
+  margin-top: 6%;
+}
+
+.info-2 {
+  text-align: right;
+}
+
+.info-1 h2 {
+  margin-bottom: 3%;
+  margin-left: -2%;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: white;
+}
+
+.info-2 h2 {
+  margin-bottom: 3%;
+  margin-right: 8%;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: white;
+}
+
+.info-1 p {
+  margin-bottom: 2%;
+  margin-left: -2%;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+}
+
+.info-2 p {
+  margin-bottom: 2%;
+  margin-right: 8%;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+}
+
+/* 
+==================================
+FOOTER
+================================== 
+*/
+
+footer {
+  background-color: #1e1d1c;
+  color: white;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+#footer-contenair {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0 10% 2% 10%;
+  padding: 3% 0;
+}
+
+.size {
+  margin-top: 2%;
+  width: 25%;
+}
+
+.footer-logo {
+  padding-top: 2%;
+}
+
+.footer-logo img {
+  width: 90%;
+}
+
+.size h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.size p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.size ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.size li {
+  border-bottom: 0.5px solid #363636;
+  padding: 10px 5px 5px 0px;
+}
+
+.size a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.size a:hover {
+  transition-duration: 0.2s;
+  color: #ffd100;
+}
+
+/* FOOTER COPYRIGHT */
+#footer-copyright {
+  background-color: #0d0c0a;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 450;
+  padding: 1% 5% 1% 5%;
+}
+
+/* 
+================================== 
+ ANIMATION
+================================== 
+*/
+
+.reveal-loaded .reveal {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.reveal-loaded .reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s cubic-bezier(0.5, 0, 0, 1);
+}

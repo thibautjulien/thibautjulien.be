@@ -1,0 +1,174 @@
+@media all and (max-device-width: 960px) {
+  .wrapper {
+    padding: 0 30px;
+  }
+
+  .contenair-info img {
+    width: 25%;
+  }
+
+  .info-1,
+  .info-2 {
+    margin-top: 3%;
+  }
+}
+
+@media all and (max-device-width: 600px) {
+  /*
+ -------------------------
+ HEADER
+ -------------------------
+ */
+
+  #nav-menu a {
+    font-size: 1.2em;
+  }
+
+  /* 
+ ================================== 
+ MAIN-IMAGE 
+ ================================== 
+ */
+
+  .main-image h2 {
+    font-size: 4em;
+  }
+
+  .main-image p {
+    font-size: 2em;
+  }
+
+  /* 
+  ====================================
+  INDEX - INFORMATIONS
+  ====================================
+  */
+
+  .contenair-info {
+    display: block;
+  }
+
+  .contenair-info img {
+    display: none;
+  }
+
+  .info-1 {
+    margin-left: 12%;
+  }
+
+  .info-2 {
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  .info-1 h2,
+  .info-2 h2 {
+    font-size: 2em;
+  }
+
+  .info-1 p,
+  .info-2 p {
+    font-size: 2em;
+  }
+
+  /* 
+  ====================================
+  INFORMATIONS - INFORMATIONS
+  ====================================
+  */
+
+  .contenair-infos {
+    display: block;
+  }
+
+  .contenair-infos img {
+    display: none;
+  }
+
+  .infos-1 {
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  .infos-2 {
+    margin-left: 2%;
+  }
+
+  .infos-1 h2,
+  .infos-2 h2 {
+    font-size: 2em;
+  }
+
+  .infos-1 p,
+  .infos-2 p {
+    font-size: 2em;
+  }
+
+  /* 
+  ====================================
+  TARIFS - INFORMATIONS MID-PAGE
+  ====================================
+  */
+  #informations-mid-page {
+    margin-left: 10%;
+  }
+
+  /* 
+  ====================================
+  CONTACT - INFORMATIONS HEAD-FORM
+  ====================================
+  */
+  .information-head-form {
+    margin-left: 10%;
+  }
+
+  /* 
+  ====================================
+  CONTACT - FORM CONTACT
+  ====================================
+  */
+  .form-contact {
+    margin-left: 10%;
+  }
+
+  /* 
+  ====================================
+  MENU - MENU-OUFTI-VALET
+  ====================================
+  */
+  .menu-oufti-valet {
+    margin-left: 10%;
+  }
+
+  /* 
+  ====================================
+  FOOTER
+  ====================================
+  */
+
+  #footer-contenair {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer-contenair h2 {
+    font-size: 2em;
+  }
+
+  #footer-contenair a {
+    font-size: 1.3em;
+  }
+
+  .size {
+    margin-top: 3em;
+    width: 100%;
+  }
+
+  .size:last-child {
+    margin-bottom: 3em;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+}

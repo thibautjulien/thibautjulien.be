@@ -139,10 +139,6 @@ nav .btn:hover {
     background-color: #8f8f8f;
 }
 
-nav .btn a {
-    color: black;
-}
-
 
 /* ARTICLE Below header NAV */
 .container-header {
@@ -169,7 +165,7 @@ nav .btn a {
 }
 
 .container-header-textes p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
 }
@@ -205,6 +201,7 @@ nav .btn a {
     text-align: justify;
     font-family: "Shantell Sans", cursive;
     font-weight: 400;
+    font-size: 1.3rem;
 }
 
 /* ARTICLE MY PROJECTS */
