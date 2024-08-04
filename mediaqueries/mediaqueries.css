@@ -1,0 +1,131 @@
+/* 
+Developer: Thibaut Julien
+Date: 04.08.2024
+Version: 1.0
+*/
+
+@media (width < 1300px) {
+    /* INDEX */
+    .wrapper {
+        padding: 0 10rem;
+    }
+
+    .container-header {
+        margin: 0 10rem;
+        margin-top: 10rem;
+    }
+
+    .container-contact {
+        padding: 10rem 5rem 0 5rem;
+    }
+}
+
+@media (width < 850px) {
+    /* INDEX */
+    .wrapper {
+        padding: 0 5rem;
+    }  
+
+    .container-header {
+        flex-direction: column-reverse;
+    }
+
+    .container-contact {
+        padding: 10rem 2rem 0 2rem;
+    }
+
+    .container-header-textes {
+        margin-top: 5rem;
+    }
+
+    .container-header-textes h1 {
+        font-size: 3.5rem;
+    }
+
+    .container-header-textes p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (width < 450px) {
+    /* INDEX */
+    .wrapper {
+        padding: 0 2rem
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    nav .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .nav-logo {
+        max-width: 50px;
+    }
+
+    .container-header {
+        margin: 0 2rem;
+    }
+
+    .container-header-textes h1 {
+        font-size: 2.5rem;
+    }
+
+    .container-header-textes p {
+        font-size: 0.5rem;
+        line-height: 2rem;
+    }
+
+    .container-header-image {
+        margin-top: 2rem;
+    }
+
+    .container-header-image img {
+        width: 150px;
+    }
+
+    .nav-header-socials img {
+        width: 25px;
+    }
+
+    .container-aboutme {
+        margin-top: 5rem;
+    }
+
+    .container-aboutme h1 {
+        font-size: 2rem;
+    }
+
+    .container-aboutme p {
+        font-size: 1rem;
+    }
+
+    .container-projects {
+        margin-top: 20rem;
+    }
+
+    .container-projects h1 {
+        font-size: 2rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card {
+        margin: 1rem auto;
+    }
+
+    .container-contact {
+        margin-top: 20rem;
+        padding: 10rem 0.7rem 0 0.7rem;
+    }
+
+    .container-contact h1 {
+        font-size: 2rem;
+    }
+}

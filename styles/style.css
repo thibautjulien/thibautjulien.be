@@ -218,7 +218,7 @@ nav .btn:hover {
 }
 
 .card-container {
-    perspective: 1000px;
+    /* perspective: 1000px; */
     display: flex;
     justify-content: space-around;
 }
