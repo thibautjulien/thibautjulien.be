@@ -124,29 +124,32 @@ nav .btn a {
     display: flex;
     /* align-items: center; */
     justify-content: space-around;
-    margin-top: 6rem;
-}
-
-.carousel-container {
-    overflow: hidden;
-    width: 700px; 
-    height: 500px; 
-    position: relative;
+    margin-top: 10rem;
 }
 
 .carousel {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
     display: flex;
-    animation: slide 30s infinite;
+    transition: transform 0.5s ease;
 }
 
 .carousel img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 700px;
+    height: auto;
+    flex-shrink: 0;
 }
 
 .infos-container {
     text-align: center;
+    margin: 0 5rem;
 }
 
 .typewriter-container h1 {
@@ -157,7 +160,7 @@ nav .btn a {
 }
 
 .infos-container p {
-    width: 550px;
+    /* width: 550px; */
     height: auto;
     text-align: justify;
     font-family: "Shantell Sans";

@@ -4,8 +4,20 @@ Date: 04.08.2024
 Version: 1.0
 */
 
+@media (max-width: 1600px) AND (width > 1300px) {
+    /* Page Projet */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infos-container {
+        margin-top: 5rem;
+    }
+}
+
 @media (width < 1300px) {
-    /* INDEX */
+    /* Page Index */
     .wrapper {
         padding: 0 10rem;
     }
@@ -18,10 +30,36 @@ Version: 1.0
     .container-contact {
         padding: 10rem 5rem 0 5rem;
     }
+
+    /* Page Projets */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infos-container {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 1000px) AND (width > 849px) {
+    /* Page Index */
+    .wrapper {
+        padding: 0 5rem;
+    }
+
+    .container-header {
+        flex-direction: column-reverse;
+    }
+
+    .container-header-textes {
+        margin-top: 5rem;
+    }
+
 }
 
 @media (width < 850px) {
-    /* INDEX */
+    /* Page Index */
     .wrapper {
         padding: 0 5rem;
     }  
@@ -45,10 +83,66 @@ Version: 1.0
     .container-header-textes p {
         font-size: 0.8rem;
     }
+
+    /* Page Projet */
+    .infos-container p{
+        padding: 0 5rem;
+    }
 }
 
-@media (width < 450px) {
-    /* INDEX */
+@media (max-width: 780px) AND (width > 749px) {
+    /* Page Projet */
+    .card-container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card {
+        margin: 1rem auto;
+    }
+
+}
+
+@media (max-width: 750px) AND (width > 609px) {
+    /* Page Index */
+    .nav-links {
+        display: none;
+    }
+
+    .container-header-image img {
+        width: 200px;
+    }
+
+    .container-header-textes h1 {
+        font-size: 3rem;
+    }
+
+    .container-header-textes p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .nav-header-socials img {
+        width: 30px;
+    }
+
+    .container-projects {
+        margin-top: 40rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card {
+        margin: 1rem auto;
+    }
+
+}
+ 
+@media (max-width: 610px) {
+    /* Page Index */
     .wrapper {
         padding: 0 2rem
     }
@@ -63,7 +157,7 @@ Version: 1.0
     }
 
     .nav-logo {
-        max-width: 50px;
+        width: 50px;
     }
 
     .container-header {
@@ -127,5 +221,14 @@ Version: 1.0
 
     .container-contact h1 {
         font-size: 2rem;
+    }
+
+    /* Page projets */
+    .infos-container {
+        margin: 5rem 0 0 0;
+    }
+
+    .infos-container p {
+        padding: 0 2rem;
     }
 }
