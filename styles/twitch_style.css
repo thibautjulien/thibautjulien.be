@@ -138,3 +138,8 @@ nav .btn {
 nav .btn:hover {
     background-color: #8f8f8f;
 }
+
+/* Article Twitch */ 
+.twitch_media {
+    margin: 5rem 10rem 0 10rem;
+}
