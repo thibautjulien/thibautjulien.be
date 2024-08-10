@@ -30,9 +30,9 @@
     <body>
         <header>
             <!-- Announce -->
-            <!-- <div class="marquee-container">
+            <div class="marquee-container">
                 <div class="marquee">Please note, the site is not completely finished. It is still in development. You may have issues viewing on small screens.</div>
-            </div> -->
+            </div>
 
             <nav>
                 <!-- Logo -->
@@ -55,21 +55,93 @@
 
         </header>
 
+        <!-- Media Twitch -->
         <article class="twitch_media">
+            <div class="wrapper">
+                
+                <div id="twitch-embed"></div>
 
-            <div id="twitch-embed"></div>
+                <script src="https://player.twitch.tv/js/embed/v1.js"></script>
 
-            <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+                <script type="text/javascript">
+                    new Twitch.Player("twitch-embed", {
+                    width: "100%",
+                    height: 800,
+                    channel: "howlnes",
+                    chat: {
+                        theme: "dark",
+                        height: 200,
+                        width: "100%"
+                    }
+                    });
+                </script>
 
-            <script type="text/javascript">
-            new Twitch.Player("twitch-embed", {
-                width: "100%",
-                height: 600,
-                channel: "howlnes"
-            });
-            </script>
+            </div>
 
         </article>
-        
+
+        <!-- Planning -->
+        <article>
+            <div class="wrapper">
+
+                <table class="planning">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="jour">Lundi</th>
+                            <th class="jour">Mardi</th>
+                            <th class="jour">Mercredi</th>
+                            <th class="jour">Jeudi</th>
+                            <th class="jour">Vendredi</th>
+                            <th class="jour">Samedi</th>
+                            <th class="jour">Dimanche</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <!-- Lignes du planning -->
+                        <tr>
+                            <td>Matin</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Après-midi</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Soir</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </article>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container-footer">
+                <p>2024 © Developed with love by Thibaut Julien</p>
+            </div>
+        </footer>
+
     </body>
 </html>
