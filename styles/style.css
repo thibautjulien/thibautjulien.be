@@ -161,7 +161,7 @@ nav .btn:hover {
 .container-header-textes h1 {
     font-family: "Shantell Sans", cursive;
     font-weight: 400;
-    font-size: 4.1rem;
+    font-size: 3.1rem;
 }
 
 .container-header-textes p {
@@ -182,7 +182,20 @@ nav .btn:hover {
 
 .container-header-image img {
     width: 300px;
+    animation: bounce-rotate 4.5s ease-in-out infinite;
 }
+
+@keyframes bounce-rotate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(5deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+  }
 
 /* ARTICLE ABOUT ME */
 .container-aboutme {
